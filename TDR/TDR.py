@@ -1,5 +1,4 @@
 import pandas as pd
-from collections import Counter
 import numpy as np
 
 class TDR():
@@ -30,7 +29,7 @@ class TDR():
     """
 
     if self.addID:
-      df.insert(0,"ID",np.arange(1,df.shape[0]+1))
+    	self.data.insert(0,"ID",np.arange(1,self.data.shape[0]+1))
 
     ##Initialize-0
     ds0=self.data.shape[0]
